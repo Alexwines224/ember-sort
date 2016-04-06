@@ -1,0 +1,2 @@
+.row
+	design-form item=model title=title buttonLabel=buttonLabel action="saveDesign"

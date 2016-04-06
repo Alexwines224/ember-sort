@@ -1,0 +1,15 @@
+draggable-object-target action="addSlice"
+	h1 = model.design.title
+	h2 Slices:
+	each model.design.slices as |slice|
+		draggable-object content=slice
+			= slice.title
+
+draggable-object-target action="removeSlice"
+	h2 Not My Slices
+	each model.slices as |slice|
+		draggable-object content=slice
+			h4 = slice.title
+
+
+= outlet

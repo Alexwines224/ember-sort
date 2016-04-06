@@ -1,0 +1,16 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" class="" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+        span.sr-only Toggle Nav
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      
+      link-to 'index' class="navbar-brand" | Brand
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        nav-link-to 'index' | Home
+        nav-link-to 'designs' | Designs
+        nav-link-to 'slices' | Slices

@@ -1,0 +1,23 @@
+h1 Designs
+br
+
+draggable-object-target action="removeDesign"
+	h2 Non-Members
+each model as |design|
+	unless design.member
+		draggable-object content=design
+			h4 = design.title
+
+
+
+draggable-object-target action="addDesign"
+	h2 Members
+each model as |design|
+	if design.member
+		draggable-object content=design
+			h4 = design.title
+			link-to 'designs.edit' design class='btn btn-success btn-xs' | Edit Design
+			link-to 'designs.show' design | View Design
+
+
+= outlet

@@ -1,0 +1,8 @@
+h1 Slices
+
+.well
+    ul.nav.nav-pills
+      	nav-link-to 'slices.index' | List Slices
+      	nav-link-to 'slices.new' | New Slices
+      	
+= outlet

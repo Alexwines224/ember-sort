@@ -1,0 +1,9 @@
+h1 Slices
+br
+each model as |slice|
+	
+	h4 = slice.title
+	link-to 'slices.edit' slice class='btn btn-success btn-xs' | Edit Slice
+	button.btn.btn-danger.btn-xs{action 'deleteSlice' slice} Delete
+
+= outlet

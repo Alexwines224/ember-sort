@@ -1,0 +1,2 @@
+.row
+	slice-form item=model title=title buttonLabel=buttonLabel action="saveSlice"

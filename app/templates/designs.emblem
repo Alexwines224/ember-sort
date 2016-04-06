@@ -1,0 +1,9 @@
+h1 Designs
+
+.well
+    ul.nav.nav-pills
+      	nav-link-to 'designs.index' | List Designs
+      	nav-link-to 'designs.new' | New Designs
+      	
+
+= outlet
